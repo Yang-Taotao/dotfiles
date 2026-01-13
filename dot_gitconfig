@@ -1,0 +1,17 @@
+[user]
+	name = T. Yang
+    email = yangtaotao0524@gmail.com
+    signingkey = ~/.ssh/tyang@nightfall.pub
+
+[init]
+    defaultBranch = main
+
+[commit]
+    gpgsign = true
+
+[gpg]
+    format = ssh
+
+[gpg "ssh"]
+    allowedSignersFile = ~/.config/git/allowed_signers
+    

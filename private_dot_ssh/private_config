@@ -1,0 +1,21 @@
+Host github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/tyang@nightfall
+	IdentitiesOnly yes
+
+Host almaportal
+	HostName almaportal.strw.leidenuniv.nl
+	User tyang
+	IdentityFile ~/.ssh/tyang@nightfall
+	WarnWeakCrypto no
+	ForwardAgent no
+
+Host miscanti
+	HostName miscanti.strw.leidenuniv.nl
+	User tyang
+	ProxyCommand ssh almaportal -W %h:%p
+	IdentityFile ~/.ssh/tyang@nightfall
+	WarnWeakCrypto no
+	ForwardAgent no
+
