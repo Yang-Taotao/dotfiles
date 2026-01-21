@@ -16,6 +16,7 @@ end
 starship init fish | source
 zoxide init fish | source
 fzf --fish | source
+thefuck --alias | source
 
 # fetch
 fastfetch
@@ -51,3 +52,16 @@ alias rip "expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias update 'sudo pacman -Syu'
 alias clean 'sudo pacman -Rns (pacman -Qtdq)'
 alias jctl 'journalctl -p 3 -xb'
+## gdm failsafe
+alias fixgdm 'sudo systemctl restart gdm'
+
+# func
+## yazi
+function y
+    set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    command yazi $argv --cwd-file="$tmp"
+    if read -z cwd <"$tmp"; and [ cwd != "$PWD" ]; and test -d "$cwd"
+        builtin cd -- "$cwd"
+    end
+    rm -f == "$tmp"
+end
