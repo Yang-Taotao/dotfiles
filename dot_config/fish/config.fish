@@ -26,7 +26,7 @@ keychain --quiet --eval tyang@nightfall | source
 
 # alias
 ## allegro 
-alias mount-miscanti 'mkdir -p ~/remote-miscanti && sshfs -o follow-symlinks tyang@miscanti:/almastorage/allegro/home/tyang ~/remote-miscanti'
+alias mount-miscanti 'mkdir -p ~/remote-miscanti && sshfs -o follow_symlinks tyang@miscanti:/almastorage/allegro/home/tyang ~/remote-miscanti'
 alias umount-miscanti 'fusermount3 -u ~/remote-miscanti 2>/dev/null && rmdir ~/remote-miscanti 2>/dev/null'
 ## eza - ls replace
 alias ls 'eza -al --color=always --group-directories-first --icons'
@@ -65,3 +65,18 @@ function y
     end
     rm -f == "$tmp"
 end
+
+# conda
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/tyang/miniforge3/bin/conda
+    eval /home/tyang/miniforge3/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/home/tyang/miniforge3/etc/fish/conf.d/conda.fish"
+        . "/home/tyang/miniforge3/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/home/tyang/miniforge3/bin" $PATH
+    end
+end
+# <<< conda initialize <<<
+
