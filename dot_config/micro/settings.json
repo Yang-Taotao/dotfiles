@@ -1,0 +1,10 @@
+{
+    "colorscheme": "nord-tc",
+    "filemanager.openonstart": true,
+    "autosu": true,
+    "eofnewline": true,
+    "scrollbar": true,
+    "tabstospaces": true,
+    "wordwrap": true,
+    "softwrap": true
+}

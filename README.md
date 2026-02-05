@@ -15,7 +15,9 @@ Listed below:
 ├── fish
 ├── git
 ├── ghostty
+├── micro
 ├── nvim
 ├── solaar
-└── starship
+├── starship
+└── yazi
 ```
