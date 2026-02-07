@@ -10,6 +10,7 @@ Listed below:
 ./
 ├── alacritty
 ├── btop
+├── emacs
 ├── fastfetch
 ├── fcitx5
 ├── fish
