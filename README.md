@@ -10,6 +10,7 @@ Listed below:
 ./
 ├── alacritty
 ├── btop
+├── code - oss
 ├── emacs
 ├── fastfetch
 ├── fcitx5

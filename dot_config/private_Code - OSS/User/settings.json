@@ -1,0 +1,19 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "git.confirmSync": false,
+  "workbench.colorTheme": "Yukinord",
+  "jupyter.askForKernelRestart": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+  },
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.inlayHints.callArgumentNames": "partial",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "editor.lineNumbers": "relative",
+  "search.showLineNumbers": true,
+  "notebook.lineNumbers": "on",
+  "editor.rulers": [80],
+}
