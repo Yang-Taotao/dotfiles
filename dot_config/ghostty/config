@@ -50,3 +50,4 @@
 
 theme = Nord Wave
 background-opacity = 0.8
+custom-shader = shaders/cursor.glsl
