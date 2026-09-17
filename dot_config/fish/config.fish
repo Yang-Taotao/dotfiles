@@ -1,5 +1,5 @@
 # fish greetings to empty
-set -g fish_greeting ""
+# set -g fish_greeting ""
 
 # env
 if test -f ~/.fish_profile
@@ -8,7 +8,7 @@ end
 
 if test -d ~/.local/bin
     if not contains -- ~/.local/bin $PATH
-        ser -p PATH ~/.local/bin
+        set -p PATH ~/.local/bin
     end
 end
 
@@ -19,10 +19,15 @@ fzf --fish | source
 thefuck --alias | source
 
 # fetch
-fastfetch
+function fish_greeting
+    sleep 0.1
+    fastfetch
+end
 
 # ssh management
-keychain --quiet --eval tyang@nightfall | source
+if status --is-interactive
+    keychain --quiet --quick --eval tyang@nightfall | source
+end
 
 # alias
 ## allegro 
@@ -70,13 +75,12 @@ end
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /home/tyang/miniforge3/bin/conda
-    eval /home/tyang/miniforge3/bin/conda "shell.fish" "hook" $argv | source
+    eval /home/tyang/miniforge3/bin/conda "shell.fish" hook $argv | source
 else
     if test -f "/home/tyang/miniforge3/etc/fish/conf.d/conda.fish"
         . "/home/tyang/miniforge3/etc/fish/conf.d/conda.fish"
     else
-        set -x PATH "/home/tyang/miniforge3/bin" $PATH
+        set -x PATH /home/tyang/miniforge3/bin $PATH
     end
 end
 # <<< conda initialize <<<
-

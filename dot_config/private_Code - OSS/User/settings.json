@@ -3,10 +3,14 @@
   "git.confirmSync": false,
   "workbench.colorTheme": "Yukinord",
   "jupyter.askForKernelRestart": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
   },
   "python.analysis.autoFormatStrings": true,
   "python.analysis.inlayHints.callArgumentNames": "partial",
@@ -15,5 +19,9 @@
   "editor.lineNumbers": "relative",
   "search.showLineNumbers": true,
   "notebook.lineNumbers": "on",
-  "editor.rulers": [80],
+  "editor.rulers": [88],
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "latex-workshop.formatting.latex": "tex-fmt",
+  "latex-workshop.latex.autoClean.run": "onBuilt",
 }
