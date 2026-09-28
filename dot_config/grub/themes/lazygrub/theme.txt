@@ -1,0 +1,100 @@
+# GRUB2 Theme: Text-Based Nord Dark/Midnight themes
+# ---------------------------------------------------------
+
+# Global properties
+title-text: ""
+desktop-color: "#121212" # nn 0
+
+# ---------------------------------------------------------
+# ASCII Art Header
+# ---------------------------------------------------------
++ label {
+    top = 20%
+    left = 30%
+    width = 40%
+    text = "███╗   ██╗██╗ ██████╗ ██╗  ██╗████████╗███████╗ █████╗ ██╗     ██╗     "
+    font = "Iosevka Nerd Font Propo 24"
+    color = "#5e81ac" # nord 10
+    align = "center"
+}
++ label {
+    top = 22%
+    left = 30%
+    width = 40%
+    text = "████╗  ██║██║██╔════╝ ██║  ██║╚══██╔══╝██╔════╝██╔══██╗██║     ██║     "
+    font = "Iosevka Nerd Font Propo 24"
+    color = "#5e81ac"
+    align = "center"
+}
++ label {
+    top = 24%
+    left = 30%
+    width = 40%
+    text = "██╔██╗ ██║██║██║  ███╗███████║   ██║   █████╗  ███████║██║     ██║     "
+    font = "Iosevka Nerd Font Propo 24"
+    color = "#5e81ac"
+    align = "center"
+}
++ label {
+    top = 26%
+    left = 30%
+    width = 40%
+    text = "██║╚██╗██║██║██║   ██║██╔══██║   ██║   ██╔══╝  ██╔══██║██║     ██║     "
+    font = "Iosevka Nerd Font Propo 24"
+    color = "#5e81ac"
+    align = "center"
+}
++ label {
+    top = 28%
+    left = 30%
+    width = 40%
+    text = "██║ ╚████║██║╚██████╔╝██║  ██║   ██║   ██║     ██║  ██║███████╗███████╗"
+    font = "Iosevka Nerd Font Propo 24"
+    color = "#5e81ac"
+    align = "center"
+}
++ label {
+    top = 30%
+    left = 30%
+    width = 40%
+    text = "╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝"
+    font = "Iosevka Nerd Font Propo 24"
+    color = "#5e81ac"
+    align = "center"
+}
+
+# ---------------------------------------------------------
+# Boot Menu Container
+# ---------------------------------------------------------
++ boot_menu {
+    left = 30%
+    top = 40%
+    width = 40%
+    height = 30%
+    item_font = "Iosevka Nerd Font Propo 20"
+    item_color = "#D8DEE9"
+    item_height = 40
+    item_padding = 10
+    item_spacing = 5
+    item_align = "center"
+
+    selected_item_color = "#A3BE8C"
+    selected_item_bg_color = "#3B4252"
+
+    menu_pixmap_style = "none"
+    scrollbar = "false"
+}
+
+# ---------------------------------------------------------
+# Bottom Information Label
+# ---------------------------------------------------------
++ label {
+    id = "__info_label__"
+    text = "[↑/↓] select    [Enter] boot    [e] edit    [c] command line"
+    font = "Iosevka Nerd Font Propo 14"
+    color = "#4c566a" # nord3
+    align = "center"
+    left = 10%
+    top = 80%
+    width = 80%
+}
