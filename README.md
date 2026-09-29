@@ -6,16 +6,18 @@ This is a collection of my personal dotfiles for Linux.
 
 Listed below:
 
-```shell
+```sh
 ./
 ├── alacritty
 ├── btop
+├── code
 ├── code - oss
-├── emacs
+├── doom
 ├── fastfetch
 ├── fcitx5
 ├── fish
 ├── git
+├── grub
 ├── ghostty
 ├── micro
 ├── nvim
