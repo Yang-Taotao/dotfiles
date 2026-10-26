@@ -51,3 +51,7 @@
 theme = Nord Wave
 background-opacity = 0.8
 custom-shader = shaders/cursor.glsl
+
+# Set initial window size (in terminal columns and rows)
+window-width = 120
+window-height = 30
