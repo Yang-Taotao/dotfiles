@@ -20,22 +20,14 @@ if status --is-interactive
     fzf --fish | source
     thefuck --alias | source
     # ssh keychain
-    keychain --quiet --quick --eval $USER@$hostname | source
+    keychain --quiet --quick --eval --immediate $USER@$hostname | source
 
     # alias
-    ## allegro
-    alias mount-miscanti \
-        'mkdir -p ~/remote-miscanti && \
-        sshfs -o follow_symlinks $USER@miscanti:/almastorage/allegro/home/$USER \
-        ~/remote-miscanti'
-    alias umount-miscanti \
-        'fusermount3 -u ~/remote-miscanti 2>/dev/null && \
-        rmdir ~/remote-miscanti 2>/dev/null'
     ## eza
-    alias ls 'eza -al --color=always --group-directories-first --icons'
-    alias la 'eza -a --color=always --group-directories-first --icons'
-    alias ll 'eza -l --color=always --group-directories-first --icons'
-    alias lt 'eza -aT --color=always --group-directories-first --icons'
+    alias ls 'eza -al --color=always --group-directories-first --icons=auto'
+    alias la 'eza -a --color=always --group-directories-first --icons=auto'
+    alias ll 'eza -l --color=always --group-directories-first --icons=auto'
+    alias lt 'eza -aT --color=always --group-directories-first --icons=auto'
     ## cd
     alias .. 'cd ..'
     alias ... 'cd ../..'
